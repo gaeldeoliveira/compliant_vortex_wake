@@ -1,0 +1,14 @@
+            r_a: 0.5000
+          phi_a: -0.4444
+          C_F_a: 0.8889
+          C_F_b: 0.1360
+         Cp_num: -0.6892
+        Cp_theo: -0.6833
+           e_Cp: 0.0087
+         ua_num: 0.7754
+        ua_theo: 0.7687
+         a1_num: 0.2246
+        a1_theo: 0.2313
+    RES_stretch: 7.1493e-15
+      RES_shape: 9.9970e-13
+             VS: [1×1 constant_strenght_vortex_segment_2d]

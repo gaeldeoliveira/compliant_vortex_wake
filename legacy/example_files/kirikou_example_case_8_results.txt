@@ -1,0 +1,93 @@
+-- Problem Inputs --
+r_a      = 0.5
+phi_a    = -0.44444
+-- Force Coefficient --
+C_F_a    = 0.88889
+C_F_b    = 0.046077
+-- Power Coefficient --
+Cp_num   = -0.62554
+Cp_theo  = -0.62331
+e_Cp     =  0.3575%
+-- Average Normal Speed on Actuator --
+ua_num   = 0.70373
+ua_theo  = 0.70122
+e_ua     = 0.3575%
+-- Induction Factor --
+a1_num   = 0.29627
+a1_theo  = 0.29878
+e_a1     = -0.83906%
+-- Solution Residuals --
+Strecht  = 6.7938e-15
+Shape    = 9.9997e-13
+
+
+>> DSD.RES
+
+ans = 
+
+  struct with fields:
+
+            r_a: 0.5000
+          phi_a: -0.4444
+          C_F_a: 0.8889
+          C_F_b: 0.0461
+         Cp_num: -0.6255
+        Cp_theo: -0.6233
+           e_Cp: 0.0036
+         ua_num: 0.7037
+        ua_theo: 0.7012
+         a1_num: 0.2963
+        a1_theo: 0.2988
+    RES_stretch: 6.7938e-15
+      RES_shape: 9.9997e-13
+             VS: [1×1 constant_strenght_vortex_segment_2d]
+
+
+ipc = 
+
+  inviscid_panel_case_multielement with properties:
+
+                     u_inf: 1
+                     alpha: 0
+                  c_over_R: 0.1000
+                      x_cp: 0.2500
+                  rotation: 0
+                        px: [280×1 double]
+                        py: [280×1 double]
+          te_first_indices: [1 140]
+           te_last_indices: [139 278]
+    te_first_indices_input: [2×1 double]
+     te_last_indices_input: [2×1 double]
+                N_elements: 2
+                         R: 10
+                  x_center: 0.2500
+                  y_center: -10
+                  p_center: [0.2500 -10]
+                  L_versor: []
+                 u_x_theta: @(x,y)u_vec_theta(x,y)*[1;0]
+                 u_y_theta: @(x,y)u_vec_theta(x,y)*[0;1]
+                       aps: [1×1 airfoil_panel_set]
+             u_n_BC_vector: [278×1 double]
+                   u_v_t_M: [278×278 double]
+                   u_s_t_M: [278×278 double]
+                     u_t_M: [278×280 double]
+                     u_n_M: [278×280 double]
+               u_inf_x_vec: [278×1 double]
+               u_inf_y_vec: [278×1 double]
+               u_inf_n_vec: [278×1 double]
+               u_inf_t_vec: [278×1 double]
+                         A: [280×280 double]
+                         b: [280×1 double]
+                  q_vector: [280×1 double]
+                      L_Cp: [-0.1639 0.1639]
+                   L_gamma: [0.2855 -0.2855]
+                      D_Cp: [0.0230 0.0230]
+                       res: 1.1955e-14
+                      res2: [0.4495 0.4495]
+                   u_t_vec: [278×1 double]
+                        cp: [278×1 double]
+                   cp_plot: [278×1 double]
+                 px_middle: [278×1 double]
+                 py_middle: [278×1 double]
+                       F_x: [0.0230 0.0230]
+                       F_y: [-0.1639 0.1639]
